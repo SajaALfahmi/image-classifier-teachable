@@ -1,4 +1,4 @@
-# Image Classifier with Teachable Machine
+# 🧠 Image Classifier with Teachable Machine
 
 This project is a simple image classifier trained using [Teachable Machine](https://teachablemachine.withgoogle.com/).  
 It can recognize two animals: **Horse 🐴** and **Cheetah 🐆**.
@@ -14,9 +14,9 @@ It can recognize two animals: **Horse 🐴** and **Cheetah 🐆**.
 | `labels.txt` | Class labels (Horse, Cheetah) |
 | `test_pic.py` | Python script to load and test an image |
 | `horse1.jpeg` | Test image used in prediction |
-| `output-2.jpeg` | Screenshot showing prediction result |
-| `cheetah_test_in_teachable.jpeg` | Cheetah training/testing sample from Teachable Machine |
-| `horse_test_in_teachable.jpeg` | Horse training/testing sample from Teachable Machine |
+| `output-2.jpeg` | Screenshot showing prediction result of `horse1.jpeg` |
+| `cheetah_test_in_teachable.jpeg` | Cheetah sample image used during Teachable Machine training/testing |
+| `horse_test_in_teachable.jpeg` | Horse sample image used during Teachable Machine training/testing |
 
 ---
 
@@ -33,35 +33,50 @@ It can recognize two animals: **Horse 🐴** and **Cheetah 🐆**.
 
 ```bash
 python test_pic.py
+```
+
 It will:
+- Load the model
+- Read the test image (`horse1.jpeg`)
+- Predict its class (Horse or Cheetah)
+- Print the confidence score
+- Display the image with the prediction
 
-Load the model
-Read the test image
-Predict its class (Horse or Cheetah)
-Print the confidence score
-Display the image with the prediction
+---
 
-Sample Output
+## 🧪 Sample Output
 
-Prediction result from output-2.jpeg:
+Prediction result from `horse1.jpeg`:
 
+![Prediction Output](output-2.jpeg)
 
+---
 
-🧠 Model Details
+## 🧠 Model Details
 
-Trained with Teachable Machine by Google
-Image size: 224x224
-Exported in Keras format (.h5)
-Two classes:
-Horse
-Cheetah
-💡 Notes
+- Trained with **Teachable Machine by Google**
+- Image size: **224x224**
+- Exported in Keras format (`.h5`)
+- Two classes:
+  - Horse
+  - Cheetah
 
-Make sure you are using TensorFlow 2.12.1 to avoid version compatibility issues.
-You can install it using:
+---
+
+## 💡 Notes
+
+- Make sure you are using **TensorFlow 2.12.1** to avoid version compatibility issues.
+- You can install it using:
+
+```bash
 pip install tensorflow==2.12.1
-This project is best tested in Google Colab or a local Python environment.
-👩‍💻 Created By
+```
 
-Saja Al-Fahmi
+- This project is best tested in Google Colab or a local Python environment.
+
+---
+
+## 👩‍💻 Created By
+
+**Saja Al-Fahmi**  
 This classifier was created as part of a machine learning task using Teachable Machine.

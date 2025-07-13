@@ -43,7 +43,7 @@ Display the image with the prediction
 
 Sample Output
 
-Prediction result from horse1.jpeg:
+Prediction result from output-2.jpeg:
 
 
 
